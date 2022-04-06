@@ -80,11 +80,18 @@ svg {
   padding: 10px;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 615px) {
   .container {
     grid-template-columns: 1fr;
     row-gap: 3vh;
     column-gap: 0vh;
+    grid-auto-rows: 10vh;
+  }
+  .container div .txt {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 3.5vh;
   }
 }
 
