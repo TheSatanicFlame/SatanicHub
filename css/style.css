@@ -8,6 +8,16 @@ body {
   color: #ffffff;
 }
 
+header {
+  background-image: linear-gradient(to right, #00000051, #00000051);
+  position: sticky;
+  top: 0px;
+  width: 100%;
+  z-index: 9999;
+  padding-top: 1vh;
+  padding-bottom: 3vh;
+}
+
 .container {
   margin-top: 5vh;
   display: grid;
@@ -16,6 +26,8 @@ body {
   column-gap: 4vw;
   grid-auto-rows: 8vh;
   margin-inline: auto;
+  min-height: 73.4vh;
+  row-gap: 2vh;
 }
 .container div {
   display: grid;
