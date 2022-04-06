@@ -84,6 +84,7 @@ svg {
   .container {
     grid-template-columns: 1fr;
     row-gap: 3vh;
+    column-gap: 0vh;
   }
 }
 
