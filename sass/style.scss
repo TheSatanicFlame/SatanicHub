@@ -16,6 +16,7 @@ h3{
 body{
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-position: center;
     margin: 0;
     padding: 0;
@@ -44,7 +45,8 @@ header{
     column-gap: 4vw;
     grid-auto-rows: 8vh;
     margin-inline: auto;
-    min-height: 74.1vh;
+    min-height: 70.1vh;
+    padding-bottom: 4vh;
     row-gap: 2vh;
 
     div{
@@ -91,27 +93,27 @@ input {
     height: 100%;
     width: 100%;
     padding: 6px 10px;
-  }
+}
 
-  ::placeholder {
+::placeholder {
     color: #fff;
     opacity: 0.7; 
-  }
+}
 
-  button {
+button {
     all: unset;
     cursor: pointer;
     width: 44px;
     height: 44px;
-  }
-  
-  svg {
+}
+
+svg {
     color: #fff;
     fill: currentColor;
     width: 24px;
     height: 24px;
     padding: 10px;
-  }
+}
 
 @media (max-width: 615px) {
     .container{

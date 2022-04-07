@@ -9,6 +9,7 @@ h3 {
 body {
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   background-position: center;
   margin: 0;
   padding: 0;
@@ -33,7 +34,8 @@ header {
   column-gap: 4vw;
   grid-auto-rows: 8vh;
   margin-inline: auto;
-  min-height: 74.1vh;
+  min-height: 70.1vh;
+  padding-bottom: 4vh;
   row-gap: 2vh;
 }
 .container div {
