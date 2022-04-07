@@ -29,9 +29,9 @@ header {
 .container {
   margin-top: 5vh;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   width: 80vw;
-  column-gap: 4vw;
+  column-gap: 1vw;
   grid-auto-rows: 8vh;
   margin-inline: auto;
   min-height: 70.1vh;
