@@ -19,7 +19,7 @@ let wallpapers = ["red-gradient", "night-city"];
 
 let randomWallpaper = wallpapers[Math.floor(Math.random()*wallpapers.length)];
 
-document.body.style.backgroundImage = "linear-gradient(to right, #0000008e, #0000008e)  ,url('wallpapers/" + randomWallpaper + ".jpg')"; 
+document.body.style.backgroundImage = "url('wallpapers/" + randomWallpaper + ".jpg')"; 
 
 function goTo(url){
     window.location = (url);
