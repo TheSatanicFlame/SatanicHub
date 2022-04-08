@@ -15,7 +15,7 @@ function checkTime(i) {
 }
 
 
-let wallpapers = ["red-gradient", "night-city", "burger", "bluewaves"];
+let wallpapers = ["red-gradient", "night-city", "burger", "lake"];
 
 let randomWallpaper = wallpapers[Math.floor(Math.random()*wallpapers.length)];
 
