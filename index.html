@@ -1,103 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src='https://kit.fontawesome.com/5d4a18d08e.js' crossorigin='anonymous'></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TheSatanicFlame's Hub</title>
+    <title>SatanicHub</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js" defer></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<body id="top" onload="startTime()">
+<body onload="startTime()">
+    <div class="version">Version: 2.0</div>
     <center>
-        <h3 id="clock"></h3>
-        <h1>Welcome TheSatanicFlame</h1>
+        <div class="topArea">
+            <h3 id="clock"></h3>
+            <h1>Welcome TheSatanicFlame</h1>
+        </div>
     </center>
     <header>
-
             <form role="search" id="form">
-                <input type="search" id="query" name="q" placeholder="Search..." value=""; aria-label="Search through site content"><button>
-                <svg viewBox="0 0 1024 1024"><path class="path1" d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z"></path></svg>
+                <input type="search" id="query" name="q" placeholder="Search..." value=""; aria-label="Search through site content">
+                <button>
+                    <i class="fa-solid fa-magnifying-glass"></i>
                 </button>
             </form>
     </header>
-    <div class="container">
-        <div class="thevalleypanel" style="background-color: black;" onclick="goTo('https://panel.thevalleymc.com');">
-            <img src="img/tvmc.png" alt="">
+    <div class="main-grid">
+        <a href="https://panel.thevalleymc.com/" style="background-color: rgb(0, 0, 0);">
+            <img src="icons/tvmc.png" alt="">
             <div class="txt">TheValleyMC Panel</div>
-        </div>
-        <div class="mijnglr" style="background-color: rgb(0, 205, 79);" onclick="goTo('https://glrnl.sharepoint.com/Paginas/default.aspx');">
-            <img src="img/glr.webp" alt="">
+        </a>
+        <a href="https://mijnglr.nl/" style="background-color: rgb(60, 189, 0);">
+            <img src="icons/glr.webp" alt="">
             <div class="txt">MijnGLR</div>
-        </div>
-        <div class="stackoverflow" style="background-color: rgb(193, 81, 6)" onclick="goTo('https://stackoverflow.com/');">
-            <img src="img/stackoverflow.png" alt="" >
-            <div class="txt">Stack Overflow</div>
-        </div>
-
-        <div class="netflix" style="background-color: rgb(0,0,0)" onclick="goTo('https://netflix.com/');">
-            <img src="img/netflix.png" alt="">
-            <div class="txt">Netflix</div>
-        </div>
-
-        <div class="hbomax" style="background-color: rgb(132, 0, 255)"onclick="goTo('https://play.hbomax.com/');">
-            <img src="img/hbomax.png" alt="">
-            <div class="txt">HBO Max</div>
-            </div>
-
-        <div class="displus" style="background-color: rgb(0, 5, 160)"onclick="goTo('https://disneyplus.com/');">
-            <img src="img/displus.png" alt="">
-            <div class="txt">Disney+</div>
-        </div>
-
-        <div class="crunchyroll" style="background-color: rgb(255, 136, 0)" onclick="goTo('https://crunchyroll.com/');">
-            <img src="img/crunchyroll.png" alt="">
-            <div class="txt">Crunchyroll</div>
-        </div>
-
-        <div class="twitch" style="background-color: rgb(154, 90, 213)" onclick="goTo('https://twitch.tv/');">
-            <img src="img/twitch.png" alt="">
-            <div class="txt">Twitch</div>
-        </div>
-
-        <div class="github" style="background-color: rgb(0, 0, 0)" onclick="goTo('https://github.com/');">
-            <img src="img/github.png" alt="">
-            <div class="txt">GitHub</div>
-        </div>
-
-        <div class="youtube" style="background-color: rgb(56, 56, 56)" onclick="goTo('https://youtube.com/')">
-            <img src="img/yt.png" alt="">
-            <div class="txt">YouTube</div>
-        </div>
-
-        <div class="liveserver" style="background-color: rgb(29, 84, 196)" onclick="goTo('http://127.0.0.1:5500')">
-            <img src="img/vscode.png" alt="">
+        </a>
+        <a href="http://127.0.0.1:5500/" style="background-color: rgb(37, 26, 118);">
+            <img src="icons/vscode.png" alt="">
             <div class="txt">Live Server</div>
-        </div>
-
-        <div class="udemy" style="background-color: rgb(230, 50, 170)" onclick="goTo('https://udemy.com/');">
-            <img src="img/udemy.png" alt="">
+        </a>
+        <a href="https://stackoverflow.com/" style="background-color: rgb(118, 71, 0);">
+            <img src="icons/stackoverflow.png" alt="">
+            <div class="txt">Stack Overflow</div>
+        </a>
+        <a href="https://netflix.com/" style="background-color: rgb(0, 0, 0);">
+            <img src="icons/netflix.png" alt="">
+            <div class="txt">Netflix</div>
+        </a>
+        <a href="https://hbomax.com/" style="background-color: rgb(136, 0, 198);">
+            <img src="icons/hbomax.png" alt="">
+            <div class="txt">HBO Max</div>
+        </a>
+        <a href="https://cruncyroll.com/" style="background-color: rgb(255, 140, 0);">
+            <img src="icons/crunchyroll.png" alt="">
+            <div class="txt">Crunchyroll</div>
+        </a>
+        <a href="https://disneyplus.com/" style="background-color: rgb(26, 0, 118);">
+            <img src="icons/displus.png" alt="">
+            <div class="txt">Disney+</div>
+        </a>
+        <a href="https://twitch.tv/" style="background-color: rgb(119, 23, 158);">
+            <img src="icons/twitch.png" alt="">
+            <div class="txt">Twitch</div>
+        </a>
+        <a href="https://youtube.com/" style="background-color: rgb(43, 43, 43);">
+            <img src="icons/yt.png" alt="">
+            <div class="txt">YouTube</div>
+        </a>
+        <a href="https://udemy.com/" style="background-color: rgb(118, 0, 112);">
+            <img src="icons/Udemy.png" alt="">
             <div class="txt">Udemy</div>
-        </div>
-
-        <div class="udemy" style="background-color: rgb(27, 5, 100)" onclick="goTo('https://codecademy.com/');">
-            <img src="img/codecademy.png" alt="" style="filter: brightness(0) invert(1);">
+        </a>
+        <a href="https://codecademy.com/" style="background-color: rgb(14, 0, 63);">
+            <img src="icons/codecademy.png" alt="" style="filter:invert(1);">
             <div class="txt">Codecademy</div>
-        </div>
-        <div class="udemy" style="background-color: rgb(13, 13, 13)" onclick="goTo('https://curseforge.com/');">
-            <img src="img/curseforge.png" alt="">
+        </a>
+        <a href="https://curseforge.com/" style="background-color: rgb(13, 13, 13);">
+            <img src="icons/curseforge.png" alt="">
             <div class="txt">CurseForge</div>
-        </div>
-        <div class="udemy" style="background-color: rgb(255, 136, 0)" onclick="goTo('https://spigotmc.org/');">
-            <img src="img/spigot.png" alt="">
+        </a>
+        <a href="https://spigotmc.org/" style="background-color: rgb(255, 153, 0);">
+            <img src="icons/spigot.png" alt="">
             <div class="txt">SpigotMC</div>
-        </div>
-        <div class="udemy" style="background-color: rgb(102, 0, 0)" onclick="goTo('https://stadia.google.com/');">
-            <img src="img/1280px-Stadia_logo.svg.png" alt="">
-            <div class="txt">Google Stadia</div>
-        </div>
+        </a>
+        <a href="https://github.com/" style="background-color: rgb(0, 0, 0);">
+            <img src="icons/github.png" alt="">
+            <div class="txt">GitHub</div>
+        </a>
+        <a href="https://stadia.google.com/" style="background-image:linear-gradient(to left, rgba(210,14,9,1) 0%, rgba(255,154,14,1) 50%, rgba(255,230,0,1) 100%);">
+            <img src="icons/stadia.png" alt="">
+            <div class="txt">Stadia</div>
+        </a>
+    </div>
 </body>
 </html>

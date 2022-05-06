@@ -1,3 +1,14 @@
+//Background Selector
+let wallpapers = ["red-gradient", "night-city", "burger", "lake"];
+
+let randomWallpaper = wallpapers[Math.floor(Math.random()*wallpapers.length)];
+
+document.body.style.backgroundImage = "url('wallpapers/" + randomWallpaper + ".jpg')"; 
+
+
+
+//Clock Begin
+
 function startTime() {
     const today = new Date();
     let h = today.getHours();
@@ -14,28 +25,22 @@ function checkTime(i) {
     return i;
 }
 
+//Clock End
 
-let wallpapers = ["red-gradient", "night-city", "burger", "lake"];
-
-let randomWallpaper = wallpapers[Math.floor(Math.random()*wallpapers.length)];
-
-document.body.style.backgroundImage = "url('wallpapers/" + randomWallpaper + ".jpg')"; 
-
-function goTo(url){
-    window.location = (url);
-}
-
+//Google Searchbar begin
 
 const f = document.getElementById('form');
 const q = document.getElementById('query');
 const google = 'https://www.google.com/search?q=';
 
 function submitted(event) {
-  event.preventDefault();
-  const url = google + q.value;
-  document.getElementById("query").value = "";
-  const win = window.open(url, '_blank');
-  win.focus();
+    event.preventDefault();
+    const url = google + q.value;
+    document.getElementById("query").value = "";
+    const win = window.open(url, '_blank');
+    win.focus();
 }
 
 f.addEventListener('submit', submitted);
+
+//Google Searchbar end
