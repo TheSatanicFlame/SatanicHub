@@ -157,3 +157,12 @@ header{
         }
     }
 }
+
+
+//Responsive
+
+@media (max-width: 800px) {
+    .main-grid{
+        grid-template-columns: 1fr;
+    }
+}

@@ -107,4 +107,10 @@ header i {
   margin-inline: auto;
 }
 
+@media (max-width: 800px) {
+  .main-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
